@@ -122,6 +122,10 @@ public class LZW {
 
         Integer lastPosition = null;
         for (LZWTag lzwTag : data) {
+            if (dictionary.size() >= 255) {
+                dictionary = populateMapDeCompression();
+            }
+
             String foundString = dictionary.get(lzwTag.position);
 
             if (foundString == null) {
