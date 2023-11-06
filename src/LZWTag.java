@@ -1,3 +1,3 @@
 public class LZWTag {
-    public byte position;
+    public int position;
 }

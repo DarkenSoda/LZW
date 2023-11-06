@@ -1,2 +1,2 @@
 # LZW
- LZW compression and decompression
+LZW compression and decompression
